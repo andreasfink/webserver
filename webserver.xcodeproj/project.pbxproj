@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A637FFA61DBEFB44000A6A21 /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A637FFA51DBEFB44000A6A21 /* ulib.framework */; };
-		A64A45FB183596EC00B0CC0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64A45FA183596EC00B0CC0B /* Cocoa.framework */; };
 		A64A4605183596EC00B0CC0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A64A4603183596EC00B0CC0B /* InfoPlist.strings */; };
 		A64A4607183596EC00B0CC0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64A4606183596EC00B0CC0B /* main.m */; };
 		A64A460B183596EC00B0CC0B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A64A4609183596EC00B0CC0B /* Credits.rtf */; };
@@ -16,9 +15,9 @@
 		A64A4611183596EC00B0CC0B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64A460F183596EC00B0CC0B /* MainMenu.xib */; };
 		A64A4613183596EC00B0CC0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64A4612183596EC00B0CC0B /* Images.xcassets */; };
 		A64A461A183596EC00B0CC0B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64A4619183596EC00B0CC0B /* XCTest.framework */; };
-		A64A461B183596EC00B0CC0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64A45FA183596EC00B0CC0B /* Cocoa.framework */; };
 		A64A4623183596EC00B0CC0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A64A4621183596EC00B0CC0B /* InfoPlist.strings */; };
 		A64A4625183596EC00B0CC0B /* webserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64A4624183596EC00B0CC0B /* webserverTests.m */; };
+		A69B1D2C1DC2150800009248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69B1D2B1DC2150800009248 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		A637FFA51DBEFB44000A6A21 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = ../../../../../Library/Frameworks/ulib.framework; sourceTree = "<group>"; };
 		A64A45F7183596EC00B0CC0B /* webserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A64A45FA183596EC00B0CC0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A64A45FD183596EC00B0CC0B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A64A45FE183596EC00B0CC0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A64A45FF183596EC00B0CC0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,6 +50,7 @@
 		A64A4620183596EC00B0CC0B /* webserverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "webserverTests-Info.plist"; sourceTree = "<group>"; };
 		A64A4622183596EC00B0CC0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A64A4624183596EC00B0CC0B /* webserverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webserverTests.m; sourceTree = "<group>"; };
+		A69B1D2B1DC2150800009248 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A637FFA61DBEFB44000A6A21 /* ulib.framework in Frameworks */,
-				A64A45FB183596EC00B0CC0B /* Cocoa.framework in Frameworks */,
+				A69B1D2C1DC2150800009248 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64A461B183596EC00B0CC0B /* Cocoa.framework in Frameworks */,
 				A64A461A183596EC00B0CC0B /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,8 +96,8 @@
 		A64A45F9183596EC00B0CC0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A69B1D2B1DC2150800009248 /* Foundation.framework */,
 				A637FFA51DBEFB44000A6A21 /* ulib.framework */,
-				A64A45FA183596EC00B0CC0B /* Cocoa.framework */,
 				A64A4619183596EC00B0CC0B /* XCTest.framework */,
 				A64A45FC183596EC00B0CC0B /* Other Frameworks */,
 			);
